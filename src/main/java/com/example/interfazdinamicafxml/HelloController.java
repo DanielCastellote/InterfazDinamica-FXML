@@ -1,12 +1,13 @@
 package com.example.interfazdinamicafxml;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.InnerShadow;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
+
 
 public class HelloController {
 
@@ -25,12 +26,14 @@ public class HelloController {
     @FXML
     private Label label2;
 
+
     @FXML
     public void iniciarVbox() {
 
         if (botonMenu.getTranslateX() == 0) {
             vBox.setTranslateX(0);
             botonMenu.setTranslateX(70);
+            vBox.setEffect(new DropShadow());
         } else {
             vBox.setTranslateX(-70);
             botonMenu.setTranslateX(0);

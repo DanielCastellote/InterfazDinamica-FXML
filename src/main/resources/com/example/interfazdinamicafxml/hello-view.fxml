@@ -7,12 +7,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
-<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.interfazdinamicafxml.HelloController" alignment="TOP_LEFT" style="-fx-background-color: blue">
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.interfazdinamicafxml.HelloController" alignment="TOP_LEFT" style="-fx-background-color: #8080d2">
 
 
     <Button fx:id="botonMenu" text="menu" onAction="#iniciarVbox"/>
 
-    <VBox fx:id="vBox" style="-fx-background-color: white" maxHeight="Infinity" maxWidth="70" translateX="-70">
+    <VBox fx:id="vBox" style="-fx-background-color: #77da52" maxHeight="Infinity" maxWidth="70" translateX="-70">
 
         <Button fx:id="panel1" text="VerPanel1" onAction="#panel1"/>
         <Button fx:id="panel2" text="VerPanel2" onAction="#panel2"/>
