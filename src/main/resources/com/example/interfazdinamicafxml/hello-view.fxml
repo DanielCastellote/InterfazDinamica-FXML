@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.StackPane?>
-
-
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.BorderPane?>
-<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.interfazdinamicafxml.HelloController" alignment="TOP_LEFT" style="-fx-background-color: #8080d2">
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
+<StackPane alignment="TOP_LEFT" prefHeight="238.0" prefWidth="316.0" style="-fx-background-color: #8080d2" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.HelloController">
 
-    <Button fx:id="botonMenu" text="menu" onAction="#iniciarVbox"/>
+    <Button fx:id="botonMenu" onAction="#iniciarVbox" text="menu" />
 
-    <VBox fx:id="vBox" style="-fx-background-color: #77da52" maxHeight="Infinity" maxWidth="70" translateX="-70">
+    <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="70" style="-fx-background-color: #77da52" translateX="-70">
 
-        <Button fx:id="panel1" text="VerPanel1" onAction="#panel1"/>
-        <Button fx:id="panel2" text="VerPanel2" onAction="#panel2"/>
+        <Button fx:id="panel1" onAction="#panel1" text="VerPanel1" />
+        <Button fx:id="panel2" onAction="#panel2" text="VerPanel2" />
 
     </VBox>
 
-    <Label fx:id="labelInicial" text="Hola Panel Inicial" alignment="CENTER" style="-fx-background-color: yellow" translateX="+200" translateY="+200"/>
+    <Label fx:id="labelInicial" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel Inicial" translateX="+200" translateY="+200" />
 
-    <Label fx:id="label1" text="Hola Panel 1" alignment="CENTER" visible="false" style="-fx-background-color: yellow"/>
+    <Label fx:id="label1" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 1" visible="false" />
 
-    <Label fx:id="label2" text="Hola Panel 2" alignment="CENTER" visible="false" style="-fx-background-color: yellow"/>
+    <Label fx:id="label2" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 2" visible="false" />
 
 </StackPane>
-

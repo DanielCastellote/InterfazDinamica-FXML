@@ -1,11 +1,9 @@
 package com.example.interfazdinamicafxml;
 
-import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
-import javafx.scene.effect.InnerShadow;
 import javafx.scene.layout.VBox;
 
 
