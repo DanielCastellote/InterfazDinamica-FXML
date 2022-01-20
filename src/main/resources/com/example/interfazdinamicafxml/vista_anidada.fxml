@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6262cd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
    <children>
       <TextField layoutX="226.0" layoutY="219.0" />
       <TextField layoutX="226.0" layoutY="269.0" />
@@ -13,6 +13,6 @@
       <Text layoutX="279.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
       <Text layoutX="279.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
       <Text layoutX="285.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso" />
-      <Button layoutX="42.0" layoutY="38.0" mnemonicParsing="false" text="Volver" />
+      <Button fx:id="botonVolver" onAction="#volver" layoutX="42.0" layoutY="38.0" mnemonicParsing="false" text="Volver" />
    </children>
 </AnchorPane>

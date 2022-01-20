@@ -23,6 +23,8 @@ public class HelloController {
     private Label label1;
     @FXML
     private Label label2;
+    //@FXML
+    // private VistaAnidadaController vistaAnidada;
 
 
     @FXML
@@ -45,6 +47,7 @@ public class HelloController {
         label1.setTranslateX(+200);
         label1.setTranslateY(+200);
         label1.setVisible(true);
+        // vistaAnidada.moverVista();
 
     }
 
