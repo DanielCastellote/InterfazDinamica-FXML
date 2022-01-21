@@ -9,19 +9,22 @@
 
     <Button fx:id="botonMenu" onAction="#iniciarVbox" text="menu" />
 
-    <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="70" style="-fx-background-color: #77da52" translateX="-70">
+    <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="75" style="-fx-background-color: #77da52" translateX="-75">
 
-        <Button fx:id="panel1" onAction="#panel1" text="VerPanel1" />
-        <Button fx:id="panel2" onAction="#panel2" text="VerPanel2" />
+        <Button fx:id="panel1" onAction="#panel1" text="VerDatos1" />
+        <Button fx:id="panel2" onAction="#panel2" text="VerDatos2" />
 
     </VBox>
 
-    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+500" />
+    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+1500" />
 
     <Label fx:id="labelInicial" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel Inicial" translateX="+200" translateY="+200" />
 
     <Label fx:id="label1" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 1" visible="false" />
 
     <Label fx:id="label2" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 2" visible="false" />
+
+    <Button  fx:id="botonVistaAnidada" onAction="#añadirVistaAnidada" visible="false" alignment="CENTER" mnemonicParsing="false" text="Datos 1" translateX="200.0" translateY="150.0" />
+
 
 </StackPane>
