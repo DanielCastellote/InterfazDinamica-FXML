@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.util.Duration;
 
@@ -22,19 +23,17 @@ public class HelloController {
     @FXML
     private Button botonMenu;
     @FXML
-    private Button panel1;
+    private Button botonVistaAnidada1;
     @FXML
-    private Button panel2;
+    private Button botonVistaAnidada2;
     @FXML
-    private Label labelInicial;
-    @FXML
-    private Label label1;
-    @FXML
-    private Label label2;
-    @FXML
-    private Button botonVistaAnidada;
+    private Button botonVistaAnidada3;
 
     private Animation animacion;
+
+    Persona persona1 = new Persona("Javier","javi@gmail","DAM");
+    Persona persona2 = new Persona("Daniel","dani@gmail","DAM");
+    Persona persona3 = new Persona("Mario","mario@gmail","DAW");
 
 
     @FXML
@@ -53,14 +52,15 @@ public class HelloController {
     @FXML
     public void añadirVistaAnidada() {
 
-        botonVistaAnidada.setVisible(false);
-        labelInicial.setVisible(false);
-        label1.setVisible(false);
-        label2.setVisible(false);
+        botonVistaAnidada1.setVisible(false);
+        botonVistaAnidada2.setVisible(false);
+        botonVistaAnidada3.setVisible(false);
+
+        cargarPersonas();
 
         this.animacion = new Timeline(new KeyFrame(Duration.millis(17), t -> {
 
-            vistaAnidada.setTranslateX(vistaAnidada.getTranslateX() - 7);
+            vistaAnidada.setTranslateX(vistaAnidada.getTranslateX() - 8);
             detectarColision();
         }));
         animacion.setCycleCount(Animation.INDEFINITE);
@@ -74,26 +74,45 @@ public class HelloController {
         }
     }
 
-    @FXML
-    public void panel1() {
-        labelInicial.setVisible(false);
-        label2.setVisible(false);
-        label1.setTranslateX(+200);
-        label1.setTranslateY(+200);
-        label1.setVisible(true);
-        botonVistaAnidada.setVisible(true);
+    public void cargarPersonas(){
+
+       // vistaAnidada.getChildren().stream().findFirst().get();
 
     }
 
     @FXML
-    public void panel2() {
-        labelInicial.setVisible(false);
-        label1.setVisible(false);
-        botonVistaAnidada.setVisible(false);
+    public void persona1() {
 
-        label2.setTranslateX(+200);
-        label2.setTranslateY(+200);
+        botonVistaAnidada1.setVisible(true);
+        botonVistaAnidada2.setVisible(false);
+        botonVistaAnidada3.setVisible(false);
+        botonVistaAnidada1.setText("Cargar datos persona 1");
 
-        label2.setVisible(true);
     }
+
+    @FXML
+    public void persona2() {
+
+        botonVistaAnidada2.setVisible(true);
+        botonVistaAnidada1.setVisible(false);
+        botonVistaAnidada3.setVisible(false);
+        botonVistaAnidada2.setText("Cargar datos persona 2");
+    }
+
+    @FXML
+    public void persona3() {
+
+        botonVistaAnidada3.setVisible(true);
+        botonVistaAnidada1.setVisible(false);
+        botonVistaAnidada2.setVisible(false);
+        botonVistaAnidada3.setText("Cargar datos persona 3");
+    }
+
+    @FXML
+    public void salir(){
+
+        System.exit(0);
+    }
+
+
 }

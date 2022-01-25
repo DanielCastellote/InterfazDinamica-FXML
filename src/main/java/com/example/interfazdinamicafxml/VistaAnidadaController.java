@@ -15,8 +15,18 @@ public class VistaAnidadaController {
     @FXML
     private Button botonVolver;
 
+    Persona persona1 = new Persona("Javier","javi@gmail","DAM");
+    Persona persona2 = new Persona("Daniel","dani@gmail","DAM");
+    Persona persona3 = new Persona("Mario","mario@gmail","DAW");
+
 
     public void volver(){
         anchorPane.setTranslateX(+1500);
     }
+
+    public void cargarPersona(){
+
+
+    }
+
 }
