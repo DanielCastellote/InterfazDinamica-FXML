@@ -5,12 +5,10 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import javafx.stage.Screen;
 import javafx.util.Duration;
 
 
@@ -29,11 +27,15 @@ public class HelloController {
     @FXML
     private Button botonVistaAnidada3;
 
+    @FXML
+    private VistaAnidadaController vistaAnidadaController;
+
     private Animation animacion;
 
     Persona persona1 = new Persona("Javier","javi@gmail","DAM");
     Persona persona2 = new Persona("Daniel","dani@gmail","DAM");
     Persona persona3 = new Persona("Mario","mario@gmail","DAW");
+
 
 
     @FXML
@@ -76,7 +78,9 @@ public class HelloController {
 
     public void cargarPersonas(){
 
-       // vistaAnidada.getChildren().stream().findFirst().get();
+        //vistaAnidadaController = new VistaAnidadaController();
+        //vistaAnidadaController.cargarPersona1(persona1.getNombre(),persona1.getCorreo(),persona1.getCurso());
+        //nombre.setText(persona1.getNombre());
 
     }
 

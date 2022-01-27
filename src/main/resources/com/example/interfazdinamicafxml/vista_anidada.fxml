@@ -6,18 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6262cd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
-   <children>
-      <Text fx:id="correo" layoutX="280.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gmail" />
-      <Text fx:id="nombre" layoutX="289.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daniel" />
-      <Text fx:id="curso" layoutX="286.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ºDAM" />
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6262cd;"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
+   <Text fx:id="correo" layoutX="280.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gmail"/>
+   <Text fx:id="nombre" layoutX="289.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daniel"/>
+   <Text fx:id="curso" layoutX="286.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ºDAM"/>
 
-      <Button layoutX="276.0" layoutY="21.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
-      <ImageView fitHeight="140.0" fitWidth="189.0" layoutX="236.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@iconos/logo_universidad.png" />
-         </image>
-      </ImageView>
+   <Button layoutX="276.0" layoutY="21.0" mnemonicParsing="false" onAction="#volver" text="Volver"/>
+   <ImageView fitHeight="140.0" fitWidth="189.0" layoutX="236.0" layoutY="60.0" pickOnBounds="true"
+              preserveRatio="true">
+      <image>
+         <Image url="@iconos/logo_universidad.png"/>
+      </image>
+   </ImageView>
 
-   </children>
 </AnchorPane>
