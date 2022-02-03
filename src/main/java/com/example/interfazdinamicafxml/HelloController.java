@@ -78,9 +78,7 @@ public class HelloController {
 
     public void cargarPersonas(){
 
-        //vistaAnidadaController = new VistaAnidadaController();
-        //vistaAnidadaController.cargarPersona1(persona1.getNombre(),persona1.getCorreo(),persona1.getCurso());
-        //nombre.setText(persona1.getNombre());
+        vistaAnidada.getChildren().get(1);
 
     }
 

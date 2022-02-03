@@ -9,7 +9,7 @@
 <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6262cd;"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
-   <Text fx:id="correo" layoutX="280.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gmail"/>
+   <Text fx:id="correo" layoutX="260.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gogoghola@gmail.com"/>
    <Text fx:id="nombre" layoutX="289.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daniel"/>
    <Text fx:id="curso" layoutX="286.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2ºDAM"/>
 

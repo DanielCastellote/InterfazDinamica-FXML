@@ -36,7 +36,7 @@
 
     </VBox>
 
-    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+1500" />
+    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+1200" />
 
     <!--<Label fx:id="labelInicial" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel Inicial" translateX="+200" translateY="+200" />
     <Label fx:id="label1" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 1" visible="false" />
