@@ -32,12 +32,7 @@ public class HelloController {
 
     private Animation animacion;
 
-    Persona persona1 = new Persona("Javier","javi@gmail","DAM");
-    Persona persona2 = new Persona("Daniel","dani@gmail","DAM");
-    Persona persona3 = new Persona("Mario","mario@gmail","DAW");
-
-
-
+    //TODO METER ICONOS Y IMAGENES NUEVAS
     @FXML
     public void iniciarVbox() {
 
@@ -58,7 +53,8 @@ public class HelloController {
         botonVistaAnidada2.setVisible(false);
         botonVistaAnidada3.setVisible(false);
 
-        cargarPersonas();
+
+
 
         this.animacion = new Timeline(new KeyFrame(Duration.millis(17), t -> {
 
@@ -76,11 +72,7 @@ public class HelloController {
         }
     }
 
-    public void cargarPersonas(){
 
-        vistaAnidada.getChildren().get(1);
-
-    }
 
     @FXML
     public void persona1() {
@@ -89,6 +81,7 @@ public class HelloController {
         botonVistaAnidada2.setVisible(false);
         botonVistaAnidada3.setVisible(false);
         botonVistaAnidada1.setText("Cargar datos persona 1");
+        vistaAnidadaController.cargarPersona1();
 
     }
 
@@ -99,6 +92,7 @@ public class HelloController {
         botonVistaAnidada1.setVisible(false);
         botonVistaAnidada3.setVisible(false);
         botonVistaAnidada2.setText("Cargar datos persona 2");
+        vistaAnidadaController.cargarPersona2();
     }
 
     @FXML
@@ -108,6 +102,7 @@ public class HelloController {
         botonVistaAnidada1.setVisible(false);
         botonVistaAnidada2.setVisible(false);
         botonVistaAnidada3.setText("Cargar datos persona 3");
+        vistaAnidadaController.cargarPersona3();
     }
 
     @FXML

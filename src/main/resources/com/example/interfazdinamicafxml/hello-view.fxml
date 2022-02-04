@@ -8,27 +8,27 @@
 
 <StackPane alignment="TOP_LEFT" prefHeight="238.0" prefWidth="316.0" style="-fx-background-color: #8080d2" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.HelloController">
 
-    <Button fx:id="botonMenu" onAction="#iniciarVbox" text="menu" />
+    <Button fx:id="botonMenu" onAction="#iniciarVbox" text="%botonMenu" />
 
     <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="75" style="-fx-background-color: #77da52" translateX="-75">
 
-        <Label fx:id="inicio" alignment="CENTER" style="-fx-background-color: yellow" text="Personas FX">
+        <Label fx:id="inicio" alignment="CENTER" style="-fx-background-color: yellow" text="%labelMenu">
          <VBox.margin>
             <Insets top="5.0" />
          </VBox.margin></Label>
-        <Button fx:id="panel1" onAction="#persona1" text="Persona 1">
+        <Button fx:id="panel1" onAction="#persona1" text="%botonPersona1">
          <VBox.margin>
             <Insets top="7.0" />
          </VBox.margin></Button>
-        <Button fx:id="panel2" onAction="#persona2" text="Persona 2">
+        <Button fx:id="panel2" onAction="#persona2" text="%botonPersona2">
          <VBox.margin>
             <Insets top="7.0" />
          </VBox.margin></Button>
-        <Button fx:id="panel3" onAction="#persona3" text="Persona 3">
+        <Button fx:id="panel3" onAction="#persona3" text="%botonPersona3">
          <VBox.margin>
             <Insets top="7.0" />
          </VBox.margin></Button>
-      <Button fx:id="botonSalir" mnemonicParsing="false" text="Salir" onAction="#salir">
+      <Button fx:id="botonSalir" mnemonicParsing="false" text="%botonSalir" onAction="#salir">
          <VBox.margin>
             <Insets top="9.0" />
          </VBox.margin>
@@ -42,8 +42,8 @@
     <Label fx:id="label1" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 1" visible="false" />
     <Label fx:id="label2" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 2" visible="false" />-->
 
-    <Button fx:id="botonVistaAnidada1" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" text="Datos 1" translateX="200.0" translateY="150.0" visible="false" />
-    <Button fx:id="botonVistaAnidada2" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" text="Datos 1" translateX="200.0" translateY="150.0" visible="false" />
-    <Button fx:id="botonVistaAnidada3" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" text="Datos 1" translateX="200.0" translateY="150.0" visible="false" />
+    <Button fx:id="botonVistaAnidada1" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
+    <Button fx:id="botonVistaAnidada2" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
+    <Button fx:id="botonVistaAnidada3" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
 
 </StackPane>
