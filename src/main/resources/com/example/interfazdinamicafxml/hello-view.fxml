@@ -5,45 +5,73 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <StackPane alignment="TOP_LEFT" prefHeight="238.0" prefWidth="316.0" style="-fx-background-color: #8080d2" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.HelloController">
 
-    <Button fx:id="botonMenu" onAction="#iniciarVbox" text="%botonMenu" />
+    <Button fx:id="botonMenu" onAction="#iniciarVbox">
+      <graphic>
+         <FontIcon iconLiteral="fas-bars" iconSize="30" selectionEnd="0" />
+      </graphic></Button>
 
-    <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="75" style="-fx-background-color: #77da52" translateX="-75">
+    <VBox fx:id="vBox" maxHeight="Infinity" maxWidth="85" style="-fx-background-color: #757e72" translateX="-85">
 
-        <Label fx:id="inicio" alignment="CENTER" style="-fx-background-color: yellow" text="%labelMenu">
+        <Label fx:id="inicio" alignment="CENTER" style="-fx-background-color: #c0c060" text="%labelMenu">
          <VBox.margin>
             <Insets top="5.0" />
          </VBox.margin></Label>
         <Button fx:id="panel1" onAction="#persona1" text="%botonPersona1">
          <VBox.margin>
             <Insets top="7.0" />
-         </VBox.margin></Button>
+         </VBox.margin>
+            <graphic>
+                <FontIcon iconLiteral="fas-user" iconSize="10" />
+            </graphic>
+        </Button>
         <Button fx:id="panel2" onAction="#persona2" text="%botonPersona2">
          <VBox.margin>
             <Insets top="7.0" />
-         </VBox.margin></Button>
+         </VBox.margin>
+            <graphic>
+                <FontIcon iconLiteral="fas-user" iconSize="10" />
+            </graphic>
+        </Button>
         <Button fx:id="panel3" onAction="#persona3" text="%botonPersona3">
          <VBox.margin>
             <Insets top="7.0" />
-         </VBox.margin></Button>
-      <Button fx:id="botonSalir" mnemonicParsing="false" text="%botonSalir" onAction="#salir">
+         </VBox.margin>
+            <graphic>
+                <FontIcon iconLiteral="fas-user" iconSize="10" />
+            </graphic>
+        </Button>
+      <Button fx:id="botonSalir" mnemonicParsing="false" onAction="#salir" text="%botonSalir">
          <VBox.margin>
             <Insets top="9.0" />
          </VBox.margin>
+          <graphic>
+              <FontIcon iconLiteral="fas-door-open" iconSize="10" />
+          </graphic>
+
       </Button>
 
     </VBox>
 
-    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+1200" />
+    <fx:include fx:id="vistaAnidada" source="vista_anidada.fxml" translateX="+1500" />
 
     <!--<Label fx:id="labelInicial" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel Inicial" translateX="+200" translateY="+200" />
     <Label fx:id="label1" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 1" visible="false" />
     <Label fx:id="label2" alignment="CENTER" style="-fx-background-color: yellow" text="Hola Panel 2" visible="false" />-->
 
-    <Button fx:id="botonVistaAnidada1" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
-    <Button fx:id="botonVistaAnidada2" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
-    <Button fx:id="botonVistaAnidada3" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada"  translateX="200.0" translateY="150.0" visible="false" />
-
+    <Button fx:id="botonVistaAnidada1" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" translateX="200.0" translateY="150.0" visible="false">
+      <graphic>
+         <FontIcon iconLiteral="fas-user" iconSize="10" />
+      </graphic></Button>
+    <Button fx:id="botonVistaAnidada2" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" translateX="200.0" translateY="150.0" visible="false" >
+        <graphic>
+            <FontIcon iconLiteral="fas-user" iconSize="10" />
+        </graphic></Button>
+    <Button fx:id="botonVistaAnidada3" alignment="CENTER" mnemonicParsing="false" onAction="#añadirVistaAnidada" translateX="200.0" translateY="150.0" visible="false" >
+        <graphic>
+            <FontIcon iconLiteral="fas-user" iconSize="10" />
+        </graphic></Button>
 </StackPane>

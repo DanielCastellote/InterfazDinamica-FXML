@@ -38,10 +38,10 @@ public class HelloController {
 
         if (botonMenu.getTranslateX() == 0) {
             vBox.setTranslateX(0);
-            botonMenu.setTranslateX(75);
+            botonMenu.setTranslateX(85);
             vBox.setEffect(new DropShadow());
         } else {
-            vBox.setTranslateX(-75);
+            vBox.setTranslateX(-85);
             botonMenu.setTranslateX(0);
         }
     }
@@ -53,12 +53,11 @@ public class HelloController {
         botonVistaAnidada2.setVisible(false);
         botonVistaAnidada3.setVisible(false);
 
-
-
-
+        vBox.setTranslateX(-85);
+        botonMenu.setTranslateX(0);
         this.animacion = new Timeline(new KeyFrame(Duration.millis(17), t -> {
 
-            vistaAnidada.setTranslateX(vistaAnidada.getTranslateX() - 8);
+            vistaAnidada.setTranslateX(vistaAnidada.getTranslateX() - 25);
             detectarColision();
         }));
         animacion.setCycleCount(Animation.INDEFINITE);
@@ -66,7 +65,7 @@ public class HelloController {
     }
 
     public void detectarColision() {
-        if (vistaAnidada.getBoundsInParent().intersects(botonMenu.getBoundsInParent())) {
+        if (vistaAnidada.getBoundsInParent().intersects(vBox.getBoundsInParent())) {
             vistaAnidada.setTranslateX(0);
             animacion.stop();
         }
@@ -80,7 +79,7 @@ public class HelloController {
         botonVistaAnidada1.setVisible(true);
         botonVistaAnidada2.setVisible(false);
         botonVistaAnidada3.setVisible(false);
-        botonVistaAnidada1.setText("Cargar datos persona 1");
+        botonVistaAnidada1.setText("Cargar datos persona");
         vistaAnidadaController.cargarPersona1();
 
     }
@@ -91,7 +90,7 @@ public class HelloController {
         botonVistaAnidada2.setVisible(true);
         botonVistaAnidada1.setVisible(false);
         botonVistaAnidada3.setVisible(false);
-        botonVistaAnidada2.setText("Cargar datos persona 2");
+        botonVistaAnidada2.setText("Cargar datos persona");
         vistaAnidadaController.cargarPersona2();
     }
 
@@ -101,7 +100,7 @@ public class HelloController {
         botonVistaAnidada3.setVisible(true);
         botonVistaAnidada1.setVisible(false);
         botonVistaAnidada2.setVisible(false);
-        botonVistaAnidada3.setText("Cargar datos persona 3");
+        botonVistaAnidada3.setText("Cargar datos persona");
         vistaAnidadaController.cargarPersona3();
     }
 

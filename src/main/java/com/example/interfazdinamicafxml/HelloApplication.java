@@ -14,7 +14,6 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-
         Locale localizacion = new Locale("es", "ES");
         ResourceBundle resourceBundle = ResourceBundle.getBundle("com.example.interfazdinamicafxml.internacionalizacion.strings", localizacion);
 
