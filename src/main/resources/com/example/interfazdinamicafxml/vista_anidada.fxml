@@ -6,19 +6,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6262cd;"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
    <Text fx:id="correo" layoutX="265.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    <Text fx:id="nombre" layoutX="289.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-   <Text fx:id="curso" layoutX="286.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <Text fx:id="curso" layoutX="289.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" />
 
-   <Button layoutX="276.0" layoutY="21.0" mnemonicParsing="false" onAction="#volver" text="%botonVolver"/>
+   <Button layoutX="276.0" layoutY="21.0" mnemonicParsing="false" onAction="#volver" text="%botonVolver">
+      <graphic>
+         <FontIcon iconLiteral="fas-arrow-left" iconSize="20" />
+      </graphic>
+   </Button>
    <ImageView fitHeight="140.0" fitWidth="189.0" layoutX="236.0" layoutY="60.0" pickOnBounds="true"
               preserveRatio="true">
-      <image>
-         <Image url="@iconos/logo_universidad.png"/>
-      </image>
+      <Image url="@iconos/logo_universidad.png"/>
    </ImageView>
 
 </AnchorPane>

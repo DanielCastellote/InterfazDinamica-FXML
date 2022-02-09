@@ -26,8 +26,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-dashicons-pack:12.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-devicons-pack:12.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-fontawesome5-pack:12.3.0" level="project" />
   </component>
 </module>
